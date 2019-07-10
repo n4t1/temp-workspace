@@ -1,0 +1,8 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="container default-theme" [ngClass]="{'light': theme, 'dark': !theme}">
+  <div class="content" (click)="changeTheme()">{{theme ? 'light' : 'dark'}}</div>
+  <div id="first" class="content"></div>
+  <div id="second" class="content"></div>
+  <div id="third" class="content"></div>
+</div>

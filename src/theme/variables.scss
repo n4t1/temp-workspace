@@ -1,0 +1,15 @@
+$light-theme: 'light';
+$dark-theme: 'dark';
+
+@import 'light';
+@import 'dark';
+
+@import "functions";
+
+
+// $color-100: color(color-100) !default;
+// $color-200: color(color-200) !default;
+// $color-300: color(color-300) !default;
+
+// $color-300-light: #0000ff !default;
+// $color-300-dark: #808080 !default;

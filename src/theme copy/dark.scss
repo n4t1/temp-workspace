@@ -1,0 +1,9 @@
+@mixin dark-theme() {
+  --color-100: #ffff00;
+  --color-200: #000000;
+  --color-300: #808080;
+}
+
+$color-100: #ffff00;
+$color-200: #000000;
+$color-300: #808080;

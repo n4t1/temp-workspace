@@ -1,0 +1,16 @@
+// @mixin dark-theme() {
+//   --color-100: #ffff00;
+//   --color-200: #000000;
+//   --color-300: #808080;
+// }
+
+$dark: (
+  'color-100': #ffff00,
+  'color-200': #000000,
+  'color-300': #808080
+);
+
+
+$color-100: map-get($dark, color-100);
+$color-200: map-get($dark, color-200);;
+$color-300: map-get($dark, color-300);;

@@ -1,0 +1,47 @@
+// default colors (set css variables)
+:root {
+  --color-100: #ff0000;
+  --color-200: #008000;
+  --color-300: #0000ff;
+  --color-400: #ffff00;
+  --color-500: #000000;
+  --color-600: #808080;
+}
+
+@import "variables";
+// @import "light";
+// @import "dark";
+
+.light {
+  //   @include light-theme();
+  @import "light";
+
+  #first {
+    background-color: $color-100;
+  }
+
+  #second {
+    background-color: $color-200;
+  }
+
+  #third {
+    background-color: $color-300;
+  }
+}
+
+.dark {
+  //   @include dark-theme();
+  @import "dark";
+
+  #first {
+    background-color: $color-100;
+  }
+
+  #second {
+    background-color: $color-200;
+  }
+
+  #third {
+    background-color: $color-300;
+  }
+}

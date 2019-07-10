@@ -1,0 +1,15 @@
+// @mixin light-theme() {
+//   --color-100: #ff0000;
+//   --color-200: #008000;
+//   --color-300: #0000ff;
+// }
+
+$light: (
+  'color-100': #ff0000,
+  'color-200': #008000,
+  'color-300': #0000ff
+);
+
+$color-100: map-get($light, color-100);
+$color-200: map-get($light, color-200);;
+$color-300: map-get($light, color-300);;
