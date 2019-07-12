@@ -1,7 +1,6 @@
 @import "../theme/variables";
 
 @include set-theme() {
-
   .container {
     display: flex;
   }
@@ -31,7 +30,7 @@
   //   background-color: $color-200;
   // }
 
-  #third {
-    background-color: theme(color-300, $map);
-  }
+  // #third {
+  //   background-color: theme(color-300, $map);
+  // }
 }
