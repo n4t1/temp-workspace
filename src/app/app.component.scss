@@ -1,36 +1,34 @@
 @import "../theme/variables";
 
-@include set-theme() {
-  .container {
-    display: flex;
+.container {
+  display: flex;
+}
+
+.content {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+  margin: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid teal;
+
+  &:first-child {
+    cursor: pointer;
+    border: none;
   }
+}
 
-  .content {
-    width: 200px;
-    height: 200px;
-    background-color: teal;
-    margin: 10px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid teal;
+// .first {
+//   background-color: $color-100;
+// }
 
-    &:first-child {
-      cursor: pointer;
-      border: none;
-    }
-  }
+// .second {
+//   background-color: $color-200;
+// }
 
-  // #first {
-  //   background-color: $color-100;
-  // }
-
-  // #second {
-  //   background-color: $color-200;
-  // }
-
-  // #third {
-  //   background-color: theme(color-300, $map);
-  // }
+.third {
+  background-color: $color-300;
 }

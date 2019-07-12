@@ -1,15 +1,10 @@
-$light-theme: 'light';
-$dark-theme: 'dark';
-
-@import 'light';
-@import 'dark';
-
+// $color-100: color(color-100);
+// $color-200: color(color-200);
+// $color-300: color(color-300);
+@import "mixins";
 @import "functions";
 
+@import "light";
+@import "dark";
 
-// $color-100: color(color-100) !default;
-// $color-200: color(color-200) !default;
-// $color-300: color(color-300) !default;
-
-// $color-300-light: #0000ff !default;
-// $color-300-dark: #808080 !default;
+@include create-variables();

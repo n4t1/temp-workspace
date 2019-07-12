@@ -1,27 +1,10 @@
 @import "variables";
 
 // default colors (set css variables)
-:root {
-  --color-100: #ff0000;
-  --color-200: #008000;
-  --color-300: #0000ff;
-  --color-400: #ffff00;
-  --color-500: #000000;
-  --color-600: #808080;
-
-  --theme: #{$light-theme}; // or dark
-}
-
 .light {
-  //   @include light-theme();
-  @import "light";
-  @import "theme";
-  --theme: $light;
+  @include light-theme();
 }
 
 .dark {
-  //   @include dark-theme();
-  @import "dark";
-  @import "theme";
-  --theme: $dark;
+  @include dark-theme();
 }

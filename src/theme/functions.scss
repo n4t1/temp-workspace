@@ -1,25 +1,3 @@
-// @function color($name) {
-//   @return var(--#{$name});
-// }
-
-@function theme($color, $map) {
-  // $map: ();
-  // @if (var(--theme) == $light) {
-  //   $map: $light;
-  // } @else {
-  //   $map: $dark;
-  // }
-  @return map-get($map, $color);
-}
-
-@mixin set-theme() {
-    .light {
-      $map: $light;
-      @content;
-    }
-
-    .dark {
-      $map: $dark;
-      @content;
-    }
+@function color($name) {
+  @return var(--#{$name});
 }

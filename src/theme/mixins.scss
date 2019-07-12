@@ -1,0 +1,21 @@
+@mixin set-theme($map: ()) {
+  @each $key, $value in $map {
+    --#{$key}: #{$value};
+  }
+}
+
+@mixin light-theme() {
+  @include set-theme($light);
+}
+
+@mixin dark-theme() {
+  @include set-theme($dark);
+}
+
+//TODO: create create variables methods
+@mixin create-variables() {
+  // create from light map, because its will be default map color
+  @each $key, $value in $light {
+    $key: color($key);
+  }
+}
